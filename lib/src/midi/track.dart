@@ -23,6 +23,14 @@ class MidiTrack {
     }
   }
 
+  List<String> getEvents() {
+    List<String> eventsList = [];
+    for (var e in events) {
+      eventsList.add(e);
+    }
+    return eventsList;
+  }
+
   @override
   String toString() {
     final out = StringBuffer();

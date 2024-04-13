@@ -173,4 +173,12 @@ class MidiFile {
       track.dump();
     }
   }
+
+  List<List<String>> getInfo() {
+    List<List<String>> info = [];
+    for (var track in tracks) {
+      info.add(track.getEvents());
+    }
+    return info;
+  }
 }
