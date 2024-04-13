@@ -26,7 +26,7 @@ class MidiTrack {
   List<String> getEvents() {
     List<String> eventsList = [];
     for (var e in events) {
-      eventsList.add(e);
+      eventsList.add(e.toString());
     }
     return eventsList;
   }
